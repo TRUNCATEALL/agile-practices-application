@@ -18,7 +18,7 @@ import static org.apache.http.HttpStatus.SC_OK;
 import static org.hamcrest.Matchers.is;
 
 public class ClientTest {
-    RequestSpecification request;
+    private RequestSpecification request;
 
     @BeforeEach
     void prepare() {
