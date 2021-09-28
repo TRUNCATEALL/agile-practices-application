@@ -51,11 +51,11 @@ public class ClientTest {
 
         request
                 .when()
-                .body("{\n" +
-                        " \"login\": \"" + userLogin + "\",\n" +
+                .body(String.format("{\n" +
+                        " \"login\": \"%s\",\n" +
                         " \"salt\": \"some-salt\",\n" +
-                        " \"secret\": \"" + secret + "\"" +
-                        "}")
+                        " \"secret\": \"%s\"" +
+                        "}", userLogin, secret))
                 .post(CLIENTS)
                 .then().statusCode(SC_CREATED);
 
