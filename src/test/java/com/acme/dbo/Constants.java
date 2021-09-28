@@ -1,6 +1,6 @@
 package com.acme.dbo;
 
-public interface EnvVariables {
+public interface Constants {
     String X_API_VERSION = "X-API-VERSION";
     String HOST = "http://localhost";
     int PORT = 8080;

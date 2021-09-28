@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 import java.util.Random;
 import java.util.UUID;
 
-import static com.acme.dbo.EnvVariables.*;
+import static com.acme.dbo.Constants.*;
 import static io.restassured.RestAssured.given;
 import static io.restassured.http.ContentType.JSON;
 import static org.apache.http.HttpStatus.SC_CREATED;

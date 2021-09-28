@@ -79,10 +79,13 @@ public class Client {
     @Override
     public String toString() {
         return "Client{" +
-                ", id='" + id + '\'' +
+                "id=" + id +
                 ", login='" + login + '\'' +
                 ", salt='" + salt + '\'' +
                 ", secret='" + secret + '\'' +
+                ", created='" + created + '\'' +
+                ", enabled=" + enabled +
+                ", additionalProperties=" + additionalProperties +
                 '}';
     }
 }
