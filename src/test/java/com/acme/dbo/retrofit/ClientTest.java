@@ -48,7 +48,7 @@ public class ClientTest {
         Client actualClient = service.createClient(new Client(newLogin, salt, secret))
                 .execute().body();
 
-        assertNotNull(actualClient, "В ответе вернулась пустая коллекция данных по клиенту");
+        assertNotNull(actualClient, "В ответе вернулся пустой массив данных по клиенту");
         String actualLogin = actualClient.getLogin();
 
         assertEquals(newLogin, actualLogin);
